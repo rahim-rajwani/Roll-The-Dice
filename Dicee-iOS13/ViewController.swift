@@ -17,21 +17,21 @@ class ViewController: UIViewController {
     var rightDiceNumber = 5
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
+        
+        var diceArray = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
+        
         //leftDiceNumber = 1
-        diceImageView1.image = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][Int.random (in: 0...5)]
+        diceImageView1.image = diceArray[Int.random (in: 0...5)]
         print("leftDiceNumber at beginning = \(leftDiceNumber)")
-        diceImageView2.image = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")] [Int .random(in: 0...5)]
+        diceImageView2.image = diceArray[Int .random(in: 0...5)]
         print("rightDiceNumber at the beginning = \(rightDiceNumber)")
-        leftDiceNumber += 1
-        print("leftDiceNumber at the end = \(leftDiceNumber)")
-        rightDiceNumber -= 1
-        print ("rightDiceNumber at the end = \(rightDiceNumber)")
+//        leftDiceNumber += 1
+//        print("leftDiceNumber at the end = \(leftDiceNumber)")
+//        rightDiceNumber -= 1
+//        print ("rightDiceNumber at the end = \(rightDiceNumber)")
         
-        print (Int.random(in: 1...10))
+//        print (Int.random(in: 1...10))
         
-        
-        //diceImageView1.image = #imageLiteral(resourceName: "DiceFour")
-        //diceImageView2.image = #imageLiteral(resourceName: "DiceFour")
     }
     
 }
