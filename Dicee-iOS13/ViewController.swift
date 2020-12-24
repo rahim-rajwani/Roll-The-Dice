@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         //this way is in fact a lot better than the way you've employed - but both will produce the same result
         print("leftDiceNumber at beginning = \(leftDiceNumber)")
         diceImageView2.image = diceArray[Int .random(in: 0...5)]
-        //rahim - again, same thing here - you can change it to .randomElement() :) 
+        //rahim - again, same thing here - you can change it to .randomElement() :)
         print("rightDiceNumber at the beginning = \(rightDiceNumber)")
 //        leftDiceNumber += 1
 //        print("leftDiceNumber at the end = \(leftDiceNumber)")
