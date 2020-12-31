@@ -1,9 +1,6 @@
 //
 //  SceneDelegate.swift
 //  Test
-//
-
-//
 
 import UIKit
 
